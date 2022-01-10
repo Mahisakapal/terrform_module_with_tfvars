@@ -12,7 +12,7 @@ resource "aws_subnet" "main" {
   
 }
 
-output "vpc_id" {
+output "vpc_id" {                                 # we give out bcoz we want to access this value from main.tf 
   value = "${aws_vpc.main.id}"
 }
 
