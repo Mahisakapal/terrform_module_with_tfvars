@@ -19,5 +19,5 @@ module "my_ec2" {
                                           # inside we are refring attribut by variable.tf that is default 
                                           # if we never pass here than it will use that 
   instance_type = var.instance_type       # we are refring this from verable file 
-  subnet_id     = "${module.my_vpc.subnet_id}"        # and this is how we can access the any module attrebut but there that module we have to defind output block and it only accessble from main also same shuld be null in your mudule var file 
+  subnet_id     = "${module.my_vpc.subnet_id}"        # and this is how we can access the any module attrebut but in module we have to defind output block and it only accessble from main also same shuld be null in your mudule var file 
 }
