@@ -12,4 +12,4 @@ variable "instance_type" {
                               # there you can use by variabl.tf also we can use combination of terraform.tfvars with variable.tf
 }
 
-variable "subnet_id" {}
+variable "subnet_id" {}       # we defind but never pass the value you becoz we are accessing it from module in main.tf 
